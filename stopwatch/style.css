@@ -1,0 +1,134 @@
+body {
+  background-color: rgba(
+    159,
+    60,
+    172,
+    0.6
+  ); /* Soft purple background with transparency */
+  font-family: 'Arial', sans-serif;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px
+    ),
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%);
+  background-size: 50px 50px, 25px 25px, 30px 30px, 30px 30px;
+  background-position: 0 0, 0 0, 0 0, 15px 15px;
+  background-blend-mode: overlay;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.85); /* Light white background */
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.stopwatch-display {
+  background-color: #ffffff; /* Clean white */
+  color: #6a5acd; /* Soft lavender text */
+  font-size: 3rem; /* Large font */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Soft text shadow for contrast */
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.stopwatch-display h2 {
+  font-weight: bold;
+  color: #6a5acd; /* Lavender color */
+}
+
+.btn {
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success {
+  background-color: #7fe5b0; /* Soft mint green */
+  color: #fff;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #6adfa5; /* Darker mint green on hover */
+}
+
+.btn-danger {
+  background-color: #ff6b6b; /* Soft coral */
+  color: #fff;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #ff4c4c; /* Darker coral on hover */
+}
+
+.btn-warning {
+  background-color: #ff9a8b; /* Peachy pink */
+  color: #fff;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #ff7d71; /* Darker peachy pink on hover */
+}
+
+.laps {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+}
+
+.laps h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@keyframes dotAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+}
+
+.dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 100, 150, 0.4);
+  border-radius: 50%;
+  animation: dotAnimation 2s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.dot1 {
+  top: 12%;
+  left: 25%;
+}
+
+.dot2 {
+  top: 45%;
+  left: 55%;
+}
+
+.dot3 {
+  top: 80%;
+  left: 20%;
+}
+
+.dot4 {
+  top: 35%;
+  left: 70%;
+}
